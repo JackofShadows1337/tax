@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Расчет транспортного налога</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Расчет транспортного налога</h1>
+	<form id="taxCalculatorForm">
+		<div>
+			<label for="power">Мощность двигателя (л.с.):</label>
+			<input type="number" id="power" min="1" max="9999" required>
+		</div>
+		<div>
+			<label for="monthsOwnership">Количество месяцев владения (1-12):</label>
+			<select id="monthsOwnership" required>
+				<option value="">Выберите значение</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+		</div>
+		<div>
+			<label for="luxuryCar">Роскошный автомобиль:</label>
+			<input type="checkbox" id="luxuryCar">
+		</div>
+		<div>
+			<button type="submit">Рассчитать налог</button>
+		</div>
+	</form>
+
+
+	<div id="resultContainer"></div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
